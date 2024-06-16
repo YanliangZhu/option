@@ -42,26 +42,26 @@ print(f"Option price change: {opt.optionpricechange(s0, s1, time0, time1, sigma0
 
 ## Methods
 
-`__init__(self, K, t, delta, gamma, theta, vega, rho)`
+`__init__(self, K, t, delta, gamma, theta, vega, rho)` <br />
 Initialize the OPTION instance with given parameters.
 
-`_check_and_convert_date(self, date)`
+`_check_and_convert_date(self, date)` <br />
 Check and convert date inputs to datetime.datetime.
 
-`print_details(self)`
+`print_details(self)` <br />
 Print the details of the option.
 
-`time_to_maturity(self, current_date)`
+`time_to_maturity(self, current_date)` <br />
 Calculate the time to maturity from the current date.
 
-`update_greeks(self, delta=None, gamma=None, theta=None, vega=None, rho=None)`
+`update_greeks(self, delta=None, gamma=None, theta=None, vega=None, rho=None)` <br />
 Update the option Greeks with new values.
 
-`breakeven(self, option_price)`
+`breakeven(self, option_price)` <br />
 Calculate the breakeven price of the option.
 
-`intrinsic_value(self, s)`
+`intrinsic_value(self, s)` <br />
 Calculate the intrinsic value of the option based on the current underlying price.
 
-`option_price_change(self, s0, s1, time0, time1, sigma0=None, sigma1=None, r0=None, r1=None)`
+`option_price_change(self, s0, s1, time0, time1, sigma0=None, sigma1=None, r0=None, r1=None)` <br />
 Calculate the change in option price based on changes in underlying price, time, volatility, and interest rates.
